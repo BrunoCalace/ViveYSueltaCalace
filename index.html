@@ -10,7 +10,6 @@
     <link rel="shortcut icon" href="./Productos/favicon.png" type="image/x-icon">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../sass/main.css">
         
     <!-- BOOTSTRAP -->
@@ -58,10 +57,12 @@
       </div>
     </nav>
 
+    <!-- Banner -->
     <div class="boxBanner">
       <img src="./Productos/bannerProductos2.jpg" alt="Logo">
     </div>
 
+    <!-- Filtro -->
     <section class="contenedor-filtro">
       <div>
         <button class="boton-filtro" onclick="filtrarProducto('todo')">Todo</button>
@@ -81,127 +82,27 @@
       <div>
         <button class="boton-filtro" onclick="filtrarProducto('calzado')">Calzado</button>
       </div>
+      <div>
+        <button id="verCarrito" class="boton-carrito">
+          <img src="./Productos/shoppingcart.png" alt="carrito de compras" width="30px">
+          <span id="cantCarrito" class="cantidad-carrito"></span>
+        </button>
+      </div>
     </section>
 
-    <section class="contenedor">
-      <!-- Productos -->
-      <div class="contenedor-items">
-        <div class="item bolsos hide">
-          <span class="titulo-item">Bolso Negro</span>
-          <img src="./Productos/bolso1.jpg" alt="" class="img-item">
-          <span class="precio-item">$7.500,00</span>
-          <button class="boton-item">Agregar al Carrito</button>
-        </div>
-        <div class="item bolsos hide">
-          <span class="titulo-item">Bolso Marron</span>
-          <img src="./Productos/bolso2.jpg" alt="" class="img-item">
-          <span class="precio-item">$8.500,00</span>
-          <button class="boton-item">Agregar al Carrito</button>
-        </div>
-        <div class="item carteras hide">
-          <span class="titulo-item">Cartera Cuero</span>
-          <img src="./Productos/cartera1.jpg" alt="" class="img-item">
-          <span class="precio-item">$6.500,00</span>
-          <button class="boton-item">Agregar al Carrito</button>
-        </div>
-        <div class="item carteras hide">
-          <span class="titulo-item">Cartera Colores</span>
-          <img src="./Productos/cartera2.jpg" alt="" class="img-item">
-          <span class="precio-item">$10.000,00</span>
-          <button class="boton-item">Agregar al Carrito</button>
-        </div>
-        <div class="item carteras hide">
-          <span class="titulo-item">Cartera Azul</span>
-          <img src="./Productos/cartera3.jpg" alt="" class="img-item">
-          <span class="precio-item">$12.000,00</span>
-          <button class="boton-item">Agregar al Carrito</button>
-        </div>
-        <div class="item cintos hide">
-          <span class="titulo-item">Cinto Marron</span>
-          <img src="./Productos/cinto2.jpg" alt="" class="img-item">
-          <span class="precio-item">$2.500,00</span>
-          <button class="boton-item">Agregar al Carrito</button>
-        </div>
-        <div class="item cintos hide">
-          <span class="titulo-item">Cinto Negro</span>
-          <img src="./Productos/cinto3.jpg" alt="" class="img-item">
-          <span class="precio-item">$2.500,00</span>
-          <button class="boton-item">Agregar al Carrito</button>
-        </div>
-        <div class="item cintos hide">
-          <span class="titulo-item">Cinturon Caballo</span>
-          <img src="./Productos/cinto4.jpg" alt="" class="img-item">
-          <span class="precio-item">$3.500,00</span>
-          <button class="boton-item">Agregar al Carrito</button>
-        </div>
-        <div class="item mochilas hide">
-          <span class="titulo-item">Mochila Mediana</span>
-          <img src="./Productos/mochila1.jpg" alt="" class="img-item">
-          <span class="precio-item">$13.500,00</span>
-          <button class="boton-item">Agregar al Carrito</button>
-        </div>
-        <div class="item mochilas hide">
-          <span class="titulo-item">Mochila Purpura</span>
-          <img src="./Productos/mochila3.jpg" alt="" class="img-item">
-          <span class="precio-item">$14.500,00</span>
-          <button class="boton-item">Agregar al Carrito</button>
-        </div>
-        <div class="item calzado hide">
-          <span class="titulo-item">Panchas Beige</span>
-          <img src="./Productos/panchas1.jpg" alt="" class="img-item">
-          <span class="precio-item">$16.500,00</span>
-          <button class="boton-item">Agregar al Carrito</button>
-        </div>
-        <div class="item calzado hide">
-          <span class="titulo-item">Panchas Negras</span>
-          <img src="./Productos/panchas2.jpg" alt="" class="img-item">
-          <span class="precio-item">$15.500,00</span>
-          <button class="boton-item">Agregar al Carrito</button>
-        </div>
-        <div class="item calzado hide">
-          <span class="titulo-item">Sandalias Rojas</span>
-          <img src="./Productos/sandalia5.jpg" alt="" class="img-item">
-          <span class="precio-item">$12.500,00</span>
-          <button class="boton-item">Agregar al Carrito</button>
-        </div>
-        <div class="item calzado hide">
-          <span class="titulo-item">Sandalias Negras</span>
-          <img src="./Productos/sandalia6.jpg" alt="" class="img-item">
-          <span class="precio-item">$12.500,00</span>
-          <button class="boton-item">Agregar al Carrito</button>
-        </div>
-        <div class="item calzado hide">
-          <span class="titulo-item">Sandalias Marrones</span>
-          <img src="./Productos/sandalia7.jpg" alt="" class="img-item">
-          <span class="precio-item">$12.500,00</span>
-          <button class="boton-item">Agregar al Carrito</button>
-        </div>
+    <!-- Productos -->
+    <section class="contenedor-productos">
+      <div id="shopContent" class="shop-content">
+
       </div>
-
-      <!-- Carrito -->
-      <div class="carrito" id="carrito">
-        <div class="header-carrito">
-          <h2>Tu Carrito</h2>
-        </div>
-
-        <div class="carrito-items">
-          
-        </div>
-
-        <div class="carrito-total">
-          <div class="fila">
-            <strong>Tu Total</strong>
-            <span class="carrito-precio-total">
-              $0,00
-            </span>
-          </div>
-          <button class="btn-pagar">Pagar <i class="fa-solid fa-bag-shopping"></i> </button>
-        </div>
-      </div>
-
-     
     </section>
 
+    <!-- Carrito -->
+    <section id="modal-container" class="modal-container">
+
+    </section>
+
+    <!-- Footer -->
     <footer class="siteFooter bg-propio">
       <div class="grupo1">
         <div class="box">
