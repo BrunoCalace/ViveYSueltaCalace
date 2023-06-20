@@ -1,0 +1,25 @@
+.boxFerias {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    img {
+        width: 100%;
+    }
+}
+
+.siteFerias {
+    .feriasGroup {
+        width: 100%;
+        max-width: 1200px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        .feriasList {
+            list-style: none;
+        }
+    }
+}

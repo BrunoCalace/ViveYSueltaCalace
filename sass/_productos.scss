@@ -1,0 +1,234 @@
+@import 'vars';
+
+.boxBanner{
+    width: 100%;
+    height: auto;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    img {
+        width: 100%;
+    }
+}
+
+/*Filtro*/
+.contenedor-filtro{
+    background-color: $beigeVive;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    padding: 5px 5px;
+    gap: 35px;
+    .boton-filtro{
+        background-color: $beigeVive;
+        display: block;
+        margin: 10px auto;
+        border-radius: 5px solid black;
+        color: black;
+        padding: 5px 50px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .active{
+        color: white;
+        background-color: $rojoVive;
+    }
+}
+
+/*Productos*/
+.contenedor{
+    max-width: 1200px;
+    padding: 10px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    contain: paint;
+    
+    .contenedor-items{
+        margin: 30px 0;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        grid-gap:30px;
+        grid-row-gap: 30px;
+        width: 100%;
+        transition: .3s;
+
+        .hide{
+            display: none;
+        }
+
+        .item{
+            background-color: white;
+            max-width: 200px;
+            margin: auto;
+            border: 1px solid #666;
+            border-radius: 10px;
+            padding: 20px;
+            transition: .3s;
+            
+            .img-item{
+                width: 100%;
+                padding: 20px 0px;
+            }
+            .titulo-item{
+                display: block;
+                font-weight: bold;
+                text-align: center;
+                text-transform: uppercase;
+            }
+            .precio-item{
+                display: block;
+                text-align: center;
+                font-weight: bold;
+                font-size: 22px;
+            }
+            .boton-item{
+                background-color: $rojoVive;
+                display: block;
+                margin: 10px auto;
+                border: none;
+                color: #fff;
+                padding: 5px 15px;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+        }
+        .item:hover{
+            box-shadow: 0 0 10px $rojoVive;
+            scale: 1.05;
+        }
+    }
+    
+    /*Carrito*/
+    .carrito{
+        border: 1px solid #666;
+        display: block;
+        width: 35%;
+        margin-top: 30px;
+        border-radius: 10px;
+        overflow: hidden;
+        margin-bottom: auto;
+        position: sticky !important;
+        top: 0;
+        transition: .3s;
+        margin-right: -100%;
+        opacity: 0;
+        .header-carrito{
+            background-color: $rojoVive;
+            color: #fff;
+            text-align: center;
+            padding: 30px 0;
+        }
+        .carrito-items{
+            .carrito-item{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                position: relative;
+                border-bottom: 1px solid #666;
+                padding: 20px;
+                img{
+                    margin-right: 20px;
+                }
+                .carrito-item-detalles{
+                    margin-right: 90px;
+                    .carrito-item-titulo{
+                        display: block;
+                        font-weight: bold;
+                        margin-bottom: 10px;
+                        text-transform: uppercase;
+                    }
+                    .selector-cantidad{
+                        display: inline-block;
+                        margin-right: 25px;
+                        .carrito-item-cantidad{
+                            border: none;
+                            font-size: 18px;
+                            background-color: transparent;
+                            display: inline-block;
+                            width:30px;
+                            padding: 5px;
+                            text-align: center;
+                        }
+                        i{
+                            font-size: 18px;
+                            width: 32px;
+                            height: 32px;
+                            line-height: 32px;
+                            text-align: center;
+                            border-radius: 50%;
+                            border: 1px solid #000;
+                            cursor: pointer;
+                        }
+                    }
+                    .carrito-item-precio{
+                        font-weight: bold;
+                        display: inline-block;
+                        font-size: 18px;
+                        margin-bottom: 5px;
+                    }
+                }
+            }
+            .btn-eliminar{
+                position: absolute;
+                right: 15px;
+                top: 15px;
+                color: #000;
+                font-size: 20px;
+                width: 40px;
+                height: 40px;
+                line-height: 40px;
+                text-align: center;
+                border-radius: 50%;
+                border: 1px solid #000;
+                cursor: pointer;
+                display: block;
+                background: transparent;
+                z-index: 20;
+                i{
+                    pointer-events: none;
+                }
+            }
+        }
+        .carrito-total{
+            display: block;
+            background-color: $beigeVive;
+            padding: 30px;
+            .fila{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                font-size: 22px;
+                font-weight: bold;
+                margin-bottom: 10px;
+                .carrito-precio-total{
+                    padding-left: 10px;
+                }
+            }
+            .btn-pagar{
+                display: block;
+                width: 100%;
+                border: none;
+                background-color: $rojoVive;
+                color: #fff;
+                border-radius: 5px;
+                font-size: 18px;
+                padding: 20px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+                transition: .3s;
+            }
+            .btn-pagar:hover{
+                scale: 1.05;
+            }  
+        } 
+    }
+}
+
+

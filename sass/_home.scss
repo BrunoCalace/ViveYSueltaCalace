@@ -1,0 +1,30 @@
+.boxBanner {
+    width: 100%;
+    height: auto;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    background: linear-gradient($rojoVive, $beigeVive);
+    img {
+        width: 70%;
+    }
+}
+
+h1 {
+    padding: 30px 0;
+    text-align: center;
+}
+
+.row{
+    align-items: center;
+    padding: 0 70px;
+    .img-home{
+        padding-bottom: 30px;
+    }
+    .text-home{
+        text-align: center;
+        font-size: 20px;
+    }
+}

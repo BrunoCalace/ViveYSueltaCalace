@@ -1,0 +1,56 @@
+.siteFooter {
+    width: 100%;
+    .grupo1 {
+        width: 100%;
+        max-width: 1200px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap:150px;
+        padding: 45px 0px;
+        .box {
+            figure {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                img {
+                    width: 200px;
+                }
+            }
+            h2 {
+                color: black;
+                margin-bottom: 25px;
+                font-size: 20px;
+            }
+            p {
+                color: black;
+                margin-bottom: 10px;
+            }
+        }
+        .redes {
+            a {
+                svg {
+                    display: inline-block;
+                    text-decoration: none;
+                    width: 45px;
+                    height: 45px;
+                    line-height: 45px;
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+    .grupo2 {
+        background-color: $rojoVive;
+        border-top: 2px solid white;
+        padding: 15px 10px;
+        text-align: center;
+        color: black;
+        small{
+            font-size: 15px;
+        }
+    }
+
+}

@@ -1,0 +1,480 @@
+.bg-propio {
+  background-color: rgb(248, 129, 129);
+}
+
+.siteFooter {
+  width: 100%;
+}
+.siteFooter .grupo1 {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 150px;
+  padding: 45px 0px;
+}
+.siteFooter .grupo1 .box figure {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.siteFooter .grupo1 .box figure img {
+  width: 200px;
+}
+.siteFooter .grupo1 .box h2 {
+  color: black;
+  margin-bottom: 25px;
+  font-size: 20px;
+}
+.siteFooter .grupo1 .box p {
+  color: black;
+  margin-bottom: 10px;
+}
+.siteFooter .grupo1 .redes a svg {
+  display: inline-block;
+  text-decoration: none;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  margin-right: 10px;
+}
+.siteFooter .grupo2 {
+  background-color: rgb(248, 129, 129);
+  border-top: 2px solid white;
+  padding: 15px 10px;
+  text-align: center;
+  color: black;
+}
+.siteFooter .grupo2 small {
+  font-size: 15px;
+}
+
+.boxBanner {
+  width: 100%;
+  height: auto;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  background: linear-gradient(rgb(248, 129, 129), rgb(243, 238, 195));
+}
+.boxBanner img {
+  width: 70%;
+}
+
+h1 {
+  padding: 30px 0;
+  text-align: center;
+}
+
+.row {
+  align-items: center;
+  padding: 0 70px;
+}
+.row .img-home {
+  padding-bottom: 30px;
+}
+.row .text-home {
+  text-align: center;
+  font-size: 20px;
+}
+
+.boxBanner {
+  width: 100%;
+  height: auto;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.boxBanner img {
+  width: 100%;
+}
+
+/*Filtro*/
+.contenedor-filtro {
+  background-color: rgb(243, 238, 195);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  padding: 5px 5px;
+  gap: 35px;
+}
+.contenedor-filtro .boton-filtro {
+  background-color: rgb(243, 238, 195);
+  display: block;
+  margin: 10px auto;
+  border-radius: 5px solid black;
+  color: black;
+  padding: 5px 50px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.contenedor-filtro .active {
+  color: white;
+  background-color: rgb(248, 129, 129);
+}
+
+/*Productos*/
+.contenedor {
+  max-width: 1200px;
+  padding: 10px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  contain: paint;
+  /*Carrito*/
+}
+.contenedor .contenedor-items {
+  margin: 30px 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-gap: 30px;
+  grid-row-gap: 30px;
+  width: 100%;
+  transition: 0.3s;
+}
+.contenedor .contenedor-items .hide {
+  display: none;
+}
+.contenedor .contenedor-items .item {
+  background-color: white;
+  max-width: 200px;
+  margin: auto;
+  border: 1px solid #666;
+  border-radius: 10px;
+  padding: 20px;
+  transition: 0.3s;
+}
+.contenedor .contenedor-items .item .img-item {
+  width: 100%;
+  padding: 20px 0px;
+}
+.contenedor .contenedor-items .item .titulo-item {
+  display: block;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+}
+.contenedor .contenedor-items .item .precio-item {
+  display: block;
+  text-align: center;
+  font-weight: bold;
+  font-size: 22px;
+}
+.contenedor .contenedor-items .item .boton-item {
+  background-color: rgb(248, 129, 129);
+  display: block;
+  margin: 10px auto;
+  border: none;
+  color: #fff;
+  padding: 5px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.contenedor .contenedor-items .item:hover {
+  box-shadow: 0 0 10px rgb(248, 129, 129);
+  scale: 1.05;
+}
+.contenedor .carrito {
+  border: 1px solid #666;
+  display: block;
+  width: 35%;
+  margin-top: 30px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: auto;
+  position: sticky !important;
+  top: 0;
+  transition: 0.3s;
+  margin-right: -100%;
+  opacity: 0;
+}
+.contenedor .carrito .header-carrito {
+  background-color: rgb(248, 129, 129);
+  color: #fff;
+  text-align: center;
+  padding: 30px 0;
+}
+.contenedor .carrito .carrito-items .carrito-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  border-bottom: 1px solid #666;
+  padding: 20px;
+}
+.contenedor .carrito .carrito-items .carrito-item img {
+  margin-right: 20px;
+}
+.contenedor .carrito .carrito-items .carrito-item .carrito-item-detalles {
+  margin-right: 90px;
+}
+.contenedor .carrito .carrito-items .carrito-item .carrito-item-detalles .carrito-item-titulo {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+.contenedor .carrito .carrito-items .carrito-item .carrito-item-detalles .selector-cantidad {
+  display: inline-block;
+  margin-right: 25px;
+}
+.contenedor .carrito .carrito-items .carrito-item .carrito-item-detalles .selector-cantidad .carrito-item-cantidad {
+  border: none;
+  font-size: 18px;
+  background-color: transparent;
+  display: inline-block;
+  width: 30px;
+  padding: 5px;
+  text-align: center;
+}
+.contenedor .carrito .carrito-items .carrito-item .carrito-item-detalles .selector-cantidad i {
+  font-size: 18px;
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+  text-align: center;
+  border-radius: 50%;
+  border: 1px solid #000;
+  cursor: pointer;
+}
+.contenedor .carrito .carrito-items .carrito-item .carrito-item-detalles .carrito-item-precio {
+  font-weight: bold;
+  display: inline-block;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+.contenedor .carrito .carrito-items .btn-eliminar {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  color: #000;
+  font-size: 20px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 50%;
+  border: 1px solid #000;
+  cursor: pointer;
+  display: block;
+  background: transparent;
+  z-index: 20;
+}
+.contenedor .carrito .carrito-items .btn-eliminar i {
+  pointer-events: none;
+}
+.contenedor .carrito .carrito-total {
+  display: block;
+  background-color: rgb(243, 238, 195);
+  padding: 30px;
+}
+.contenedor .carrito .carrito-total .fila {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.contenedor .carrito .carrito-total .fila .carrito-precio-total {
+  padding-left: 10px;
+}
+.contenedor .carrito .carrito-total .btn-pagar {
+  display: block;
+  width: 100%;
+  border: none;
+  background-color: rgb(248, 129, 129);
+  color: #fff;
+  border-radius: 5px;
+  font-size: 18px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.contenedor .carrito .carrito-total .btn-pagar:hover {
+  scale: 1.05;
+}
+
+.boxFerias {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+.boxFerias img {
+  width: 100%;
+}
+
+.siteFerias .feriasGroup {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+.siteFerias .feriasGroup .feriasList {
+  list-style: none;
+}
+
+.siteContacto {
+  margin-top: 45px;
+  margin-bottom: 45px;
+  justify-content: center;
+  align-items: center;
+}
+.siteContacto .contactoRow .form-control {
+  border: 1px solid black !important;
+}
+.siteContacto .contactoRow .emailButton {
+  padding: 5px 5px;
+  border: 1px solid black;
+  margin-top: 15px;
+}
+.siteContacto ul .contactoList {
+  list-style: none;
+  padding-right: 35px;
+}
+.siteContacto ul .contactoList a {
+  text-decoration: none;
+  color: black;
+}
+
+.carousel .carousel-inner .carousel-item {
+  margin: auto;
+}
+
+.container h2 {
+  margin-top: 45px;
+  text-align: center;
+  text-decoration: underline;
+}
+.container p {
+  font-size: 20px;
+  margin-bottom: 45px;
+  text-align: center;
+}
+
+body {
+  background-color: rgb(243, 238, 195) !important;
+}
+
+@media screen and (max-width: 992px) {
+  .siteFerias .feriasGroup {
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+  }
+  .boxBanner {
+    width: 100%;
+    height: auto;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    background: linear-gradient(rgb(248, 129, 129), rgb(243, 238, 195));
+  }
+  .boxBanner img {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .siteFooter .grupo1 {
+    width: 90%;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .siteFerias .feriasGroup {
+    width: 90%;
+    grid-template-columns: repeat(1, 1fr);
+    margin: auto;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+  }
+  .boxBanner {
+    width: 100%;
+    height: auto;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    background: linear-gradient(rgb(248, 129, 129), rgb(243, 238, 195));
+  }
+  .boxBanner img {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .siteFooter .grupo1 {
+    width: 90%;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .siteFerias .feriasGroup {
+    width: 90%;
+    grid-template-columns: repeat(1, 1fr);
+    margin: auto;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+  }
+  .boxBanner {
+    width: 100%;
+    height: auto;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    background: linear-gradient(rgb(248, 129, 129), rgb(243, 238, 195));
+  }
+  .boxBanner img {
+    width: 80%;
+  }
+  .accordion-item {
+    background-color: rgb(243, 238, 195) !important;
+  }
+  .accordion-item .accordion-header .accordion-button {
+    background-color: rgb(248, 129, 129) !important;
+    width: 90% !important;
+    margin: auto;
+  }
+  .accordion-item .accordion-body .accordion-group {
+    width: 90%;
+    height: auto;
+    padding: 10px;
+    display: flex;
+    gap: 20px;
+    margin: auto;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+  .accordion-item .accordion-body .flex-item img {
+    width: 100%;
+    height: auto;
+    max-width: 200px;
+    margin: auto;
+  }
+  .accordion-item .accordion-body .flex-item:hover {
+    transform: none;
+  }
+}/*# sourceMappingURL=main.css.map */

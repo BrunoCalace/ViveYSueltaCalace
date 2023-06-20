@@ -1,0 +1,12 @@
+@import 'vars';
+@import 'navbar';
+@import 'footer';
+@import 'home';
+@import 'productos';
+@import 'ferias';
+@import 'contacto';
+@import 'taller';
+body {
+    background-color: $beigeVive !important;
+}
+@import 'mediaQ';

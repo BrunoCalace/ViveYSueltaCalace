@@ -1,0 +1,26 @@
+.siteContacto {
+    margin-top: 45px;
+    margin-bottom: 45px;
+    justify-content: center;
+    align-items: center;
+    .contactoRow{
+        .form-control {
+            border: 1px solid black !important;
+        }
+        .emailButton {
+            padding: 5px 5px;
+            border: 1px solid black;
+            margin-top: 15px;
+        }
+    }
+    ul {
+        .contactoList {
+            list-style: none;
+            padding-right: 35px;
+            a {
+                text-decoration: none;
+                color: black;
+            }
+        }
+    } 
+}

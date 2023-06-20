@@ -1,0 +1,131 @@
+@import 'vars';
+
+@media screen and (max-width:992px) {
+    .siteFerias {
+        .feriasGroup {
+            grid-template-columns: repeat(2, 1fr);
+            width: 100%;
+            justify-content: center;
+            align-content: center;
+            align-items: center;
+        }
+        
+    }
+
+    .boxBanner {
+        width: 100%;
+        height: auto;
+        display: flex;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        background: linear-gradient($rojoVive, $beigeVive);
+        img {
+            width: 80%;
+        }
+    }
+}
+
+@media screen and (max-width:768px){
+    .siteFooter {
+        .grupo1 {
+            width: 90%;
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+
+    .siteFerias {
+        .feriasGroup {
+            width: 90%;
+            grid-template-columns: repeat(1, 1fr);
+            margin: auto;
+            justify-content: center;
+            align-content: center;
+            align-items: center;
+        }
+    }
+
+    .boxBanner {
+        width: 100%;
+        height: auto;
+        display: flex;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        background: linear-gradient($rojoVive, $beigeVive);
+        img {
+            width: 80%;
+        }
+    }
+}
+
+@media screen and (max-width:576px){
+    .siteFooter {
+        .grupo1 {
+            width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        }
+    }
+    
+    .siteFerias {
+        .feriasGroup {
+            width: 90%;
+            grid-template-columns: repeat(1, 1fr);
+            margin: auto;
+            justify-content: center;
+            align-content: center;
+            align-items: center;
+        }
+    }
+
+    .boxBanner {
+        width: 100%;
+        height: auto;
+        display: flex;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        background: linear-gradient($rojoVive, $beigeVive);
+        img {
+            width: 80%;
+        }
+    }
+    .accordion-item {
+        background-color: $beigeVive !important;
+        .accordion-header {
+            .accordion-button {
+                background-color: $rojoVive !important;
+                width: 90% !important;
+                margin: auto;
+            }
+        }
+        .accordion-body {
+            .accordion-group {
+                width: 90%;
+                height: auto;
+                padding: 10px;
+                display: flex;
+                gap: 20px;
+                margin: auto;
+                flex-flow: row wrap;
+                justify-content: center;
+                align-items: center;
+                align-content: center;
+            }
+            .flex-item {
+                img {
+                    width: 100%;
+                    height: auto;
+                    max-width: 200px;
+                    margin: auto;
+                }
+            }
+            .flex-item:hover {
+                transform: none;
+            }
+        }
+    }
+}
