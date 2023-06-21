@@ -72,10 +72,6 @@
         justify-content: center;
         align-items: center;
         text-align: center;
-
-        .hide{
-            display: none;
-        }
             
         .card-img{
             width: 80%;
@@ -93,6 +89,9 @@
             font-weight: bold;
             font-size: 22px;
         }
+    }
+    .hide{
+        display: none;
     }
     .card-btn{
         background-color: $rojoVive;
