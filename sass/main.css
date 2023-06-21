@@ -130,8 +130,8 @@ h1 {
   background-color: black;
   color: #fff;
   border-radius: 50%;
-  font-size: 10px;
-  padding: 4px;
+  font-size: 11px;
+  padding: 5px;
   display: none;
 }
 .contenedor-filtro .active {
@@ -155,9 +155,6 @@ h1 {
   align-items: center;
   text-align: center;
 }
-.shop-content .card .hide {
-  display: none;
-}
 .shop-content .card .card-img {
   width: 80%;
   padding: 20px 0;
@@ -173,6 +170,9 @@ h1 {
   text-align: center;
   font-weight: bold;
   font-size: 22px;
+}
+.shop-content .hide {
+  display: none;
 }
 .shop-content .card-btn {
   background-color: rgb(248, 129, 129);
@@ -236,7 +236,7 @@ h1 {
   cursor: pointer;
 }
 .modal-container .modal-content .delete-product img {
-  width: 25px;
+  width: 20px;
   height: auto;
 }
 .modal-container .modal-content .restar {

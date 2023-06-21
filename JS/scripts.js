@@ -59,7 +59,6 @@ productos.forEach((product) =>{
         }
         console.log(carrito);
         carritoCounter();
-        pintarCarrito();
         saveLocal();
     });
 });
@@ -95,6 +94,7 @@ const pintarCarrito = () => {
         <p>${product.cant}</p>
         <span class="sumar"> + </span>
         <p>$ ${product.precio}</p>
+        <span class="delete-product"><img src="Productos/tachoDeBasura.png"></span>
         `;
     
         modalContainer.append(carritoContent);
@@ -117,13 +117,12 @@ const pintarCarrito = () => {
             saveLocal();
             pintarCarrito();
         })
-    
-        let eliminar = document.createElement("span");
-        eliminar.innerHTML = `<img src="Productos/tachoDeBasura.png">`;
-        eliminar.className = "delete-product";
-        carritoContent.append(eliminar);
-    
-        eliminar.addEventListener("click", eliminarProducto);
+
+        let eliminar = carritoContent.querySelector(".delete-product");
+
+        eliminar.addEventListener("click", () => {
+            eliminarProducto(product.id);
+        })
     });
     
     const total = carrito.reduce((acc, el) => acc + (el.precio*el.cant), 0);
@@ -137,9 +136,9 @@ const pintarCarrito = () => {
 verCarrito.addEventListener("click", pintarCarrito);
 
 //Eliminar producto de carrito
-const eliminarProducto = () => {
-    const foundId = carrito.find((element) => element.id);
-    console.log(foundId)
+const eliminarProducto = (id) => {
+    const foundId = carrito.find((element) => element.id === id);
+    console.log(foundId);
 
     carrito = carrito.filter((carritoId) => {
         return carritoId !== foundId;
