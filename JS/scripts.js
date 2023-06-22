@@ -63,7 +63,6 @@ productos.forEach((product) =>{
     });
 });
 
-//Carrito
 const pintarCarrito = () => {
     modalContainer.innerHTML = "";
     modalContainer.style.display = "flex";
@@ -135,10 +134,8 @@ const pintarCarrito = () => {
 
 verCarrito.addEventListener("click", pintarCarrito);
 
-//Eliminar producto de carrito
 const eliminarProducto = (id) => {
     const foundId = carrito.find((element) => element.id === id);
-    console.log(foundId);
 
     carrito = carrito.filter((carritoId) => {
         return carritoId !== foundId;
@@ -149,7 +146,6 @@ const eliminarProducto = (id) => {
     pintarCarrito();
 };
 
-//Numero carrito
 const carritoCounter = () => {
     if(carrito.length > 0){
         cantCarrito.style.display = "block"
@@ -159,13 +155,10 @@ const carritoCounter = () => {
     }
 }
 
-//Cuando carga pagina que aparezcan todos los productos
-
 window.onload = () => {
     filtrarProducto("todo");
 };
 
-//Funcion filtro
 function filtrarProducto(value) {
     let buttons = document.querySelectorAll(".boton-filtro");
     buttons.forEach(button => {
@@ -194,7 +187,6 @@ function filtrarProducto(value) {
     });
 }
 
-//Set item
 const saveLocal = () => {
     localStorage.setItem("carrito", JSON.stringify(carrito));
 }
