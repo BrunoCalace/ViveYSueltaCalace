@@ -120,6 +120,24 @@ const pintarCarrito = () => {
     `;
 
     modalContainer.append(totalCompra);
+
+    const comprarFinButton = document.querySelector(".comprarFin");
+
+    comprarFinButton.addEventListener("click", () => {
+        
+        Swal.fire({
+            title: "¡Gracias por tu compra!",
+            text: "El pedido se ha procesado correctamente.",
+            icon: "success",
+            confirmButtonColor: "rgb(248, 129, 129)",
+            confirmButtonText: "Aceptar",
+        });    
+        carrito = [];
+        saveLocal();
+        carritoCounter();
+        pintarCarrito();
+        modalContainer.style.display = "none";
+    });
 };
 
 verCarrito.addEventListener("click", pintarCarrito);
