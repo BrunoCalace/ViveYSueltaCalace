@@ -43,13 +43,11 @@ fetch('data.json')
                     cant: product.cant,
                 });
             }
-            console.log(carrito);
             carritoCounter();
             saveLocal();
         });
     });
 })
-
 
 const pintarCarrito = () => {
     modalContainer.innerHTML = "";
@@ -75,13 +73,13 @@ const pintarCarrito = () => {
         let carritoContent = document.createElement("div");
         carritoContent.className = "modal-content";
         carritoContent.innerHTML = `
-        <img src="${product.img}">
-        <h3>${product.nom}</h3>
-        <span class="restar"> - </span>
-        <p>${product.cant}</p>
-        <span class="sumar"> + </span>
-        <p>$ ${product.precio}</p>
-        <span class="delete-product"><img src="Productos/tachoDeBasura.png"></span>
+            <img src="${product.img}">
+            <h3>${product.nom}</h3>
+            <span class="restar"> - </span>
+            <p>${product.cant}</p>
+            <span class="sumar"> + </span>
+            <p>$ ${product.precio}</p>
+            <span class="delete-product"><img src="Productos/tachoDeBasura.png"></span>
         `;
     
         modalContainer.append(carritoContent);
@@ -116,7 +114,11 @@ const pintarCarrito = () => {
     
     const totalCompra = document.createElement("div");
     totalCompra.className = "total-content";
-    totalCompra.innerHTML = `Total a pagar: $ ${total}`;
+    totalCompra.innerHTML = `
+    <p>Total a pagar: $ ${total}</p>
+    <button class="comprarFin">Comprar</button>
+    `;
+
     modalContainer.append(totalCompra);
 };
 

@@ -96,7 +96,6 @@ h1 {
   width: 100%;
 }
 
-/*Filtro*/
 .contenedor-filtro {
   background-color: rgb(243, 238, 195);
   width: 100%;
@@ -139,7 +138,6 @@ h1 {
   background-color: rgb(248, 129, 129);
 }
 
-/*Productos*/
 .shop-content {
   display: flex;
   justify-content: space-around;
@@ -188,7 +186,6 @@ h1 {
   scale: 1.05;
 }
 
-/*Carrito*/
 .modal-container {
   width: 80%;
   margin: 0 10%;
@@ -202,7 +199,7 @@ h1 {
   position: fixed;
   overflow: auto;
   z-index: 9;
-  top: 12vh;
+  top: 8vh;
   scrollbar-color: none;
 }
 .modal-container .modal-header {
@@ -250,6 +247,15 @@ h1 {
   padding: 20px;
   text-align: center;
   padding-top: 20px;
+}
+.modal-container .total-content .comprar {
+  background-color: rgb(248, 129, 129);
+  display: block;
+  margin: 10px auto;
+  color: #fff;
+  padding: 5px 15px;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 .modal-container::-webkit-scrollbar {

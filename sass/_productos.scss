@@ -119,7 +119,7 @@
     position: fixed;
     overflow: auto;
     z-index: 9;
-    top: 12vh;
+    top: 8vh;
     scrollbar-color: none;
     .modal-header {
         display: flex;
@@ -167,6 +167,15 @@
         padding: 20px;
         text-align: center;
         padding-top: 20px;
+        .comprar {
+            background-color: $rojoVive;
+            display: block;
+            margin: 10px auto;
+            color: #fff;
+            padding: 5px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
     }
 }
 .modal-container::-webkit-scrollbar{
